@@ -6,5 +6,6 @@ openai
 tavily-python
 PyPDF2
 python-dotenv
+plotly
 requests
 boto3
