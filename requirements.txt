@@ -1,0 +1,10 @@
+streamlit
+langchain
+langchain-openai
+langchain-community
+openai
+tavily-python
+PyPDF2
+python-dotenv
+requests
+boto3
