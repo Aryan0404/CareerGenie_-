@@ -395,11 +395,11 @@ with col1:
                         st.info(weather_info["output"])
                     
                     # Audio response
-                    audio_bytes = generate_audio_response(response["output"][:1000], format="wav")
-                    if audio_bytes:
-                        st.audio(BytesIO(audio_bytes), format="audio/wav")
-                    else:
-                        st.warning("Audio could not be generated.")
+                    # audio_bytes = generate_audio_response(response["output"][:1000], format="wav")
+                    # if audio_bytes:
+                    #     st.audio(BytesIO(audio_bytes), format="audio/wav")
+                    # else:
+                    #     st.warning("Audio could not be generated.")
                         # Download option
                     st.download_button(
                         "📥 Download Research Report",
@@ -457,11 +457,11 @@ with col1:
                             for metric, score in scores.items():
                                 st.metric(metric, f"{score}/10", f"{score-5:.1f}")
                             
-                            audio_bytes = generate_audio_response(response["output"][:1000], format="wav")
-                            if audio_bytes:
-                                st.audio(BytesIO(audio_bytes), format="audio/wav")
-                            else:
-                                st.warning("Audio could not be generated.")
+                            # audio_bytes = generate_audio_response(response["output"][:1000], format="wav")
+                            # if audio_bytes:
+                            #     st.audio(BytesIO(audio_bytes), format="audio/wav")
+                            # else:
+                            #     st.warning("Audio could not be generated.")
                             st.download_button(
                                 "📥 Download Analysis Report",
                                 data=response["output"],
@@ -507,11 +507,11 @@ with col1:
                         placeholder.metric("Time Remaining", f"{mins:02d}:{secs:02d}")
                         time.sleep(1)
                 
-                audio_bytes = generate_audio_response(response["output"][:1000], format="wav")
-                if audio_bytes:
-                    st.audio(BytesIO(audio_bytes), format="audio/wav")
-                else:
-                    st.warning("Audio could not be generated.")                
+                # audio_bytes = generate_audio_response(response["output"][:1000], format="wav")
+                # if audio_bytes:
+                #     st.audio(BytesIO(audio_bytes), format="audio/wav")
+                # else:
+                #     st.warning("Audio could not be generated.")                
                 st.download_button(
                     "📥 Download Interview Questions",
                     data=response["output"],
